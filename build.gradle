@@ -23,8 +23,10 @@ task zip(type: Zip) {
 		include "routes/**"
 		include "views/**"
 	}
-	
-	println archiveFileName.get()
+	archiveBaseName = 'TrainSchedule'
+	doLast {
+        println archiveFileName.get()
+    }
 }
 
 //declare task dependencies
