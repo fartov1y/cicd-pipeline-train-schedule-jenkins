@@ -24,7 +24,7 @@ task zip(type: Zip) {
 		include "views/**"
 	}
 	
-	getArchiveFile("dist/trainSchedule")
+	println archiveFileName.get("dist/trainSchedule")
 }
 
 //declare task dependencies
