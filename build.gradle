@@ -23,8 +23,8 @@ task zip(type: Zip) {
 		include "routes/**"
 		include "views/**"
 	}
-	getDestinationDirectory().set(file("dist"))
-	baseName "trainSchedule"
+	
+	getArchiveFile("dist/trainSchedule")
 }
 
 //declare task dependencies
